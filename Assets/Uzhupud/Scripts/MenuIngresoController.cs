@@ -1,4 +1,3 @@
-// MenuIngresoController.cs
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -10,9 +9,6 @@ public class MenuIngresoController : MonoBehaviour
     public TMP_Text txtLevel;
     public GameObject botonObj;
 
-    public Transform referenciaOrientacion;
-    public bool autoOrientar = true;
-
     string escenaObjetivo;
 
     void OnEnable()
@@ -23,21 +19,6 @@ public class MenuIngresoController : MonoBehaviour
     void OnDisable()
     {
         VRSeleccionManager.OnUIData -= OnData;
-    }
-
-    void Update()
-    {
-        if (!autoOrientar || referenciaOrientacion == null) return;
-
-        Vector3 dir = referenciaOrientacion.forward;
-        float ang = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
-        if (ang < 0) ang += 360f;
-
-        int sector = Mathf.RoundToInt(ang / 90f) % 4;
-        float snapY = sector * 90f;
-        var e = transform.eulerAngles;
-        e.y = snapY;
-        transform.eulerAngles = e;
     }
 
     void OnData(PisoUIData data)

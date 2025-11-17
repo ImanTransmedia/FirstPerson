@@ -22,7 +22,7 @@ public class MaquetaDetailHandler : MonoBehaviour
     public UnityEvent onExitDetailMode;
 
     bool inDetailMode = false;
-    bool inTopView = false;
+    public bool inTopView = false;
 
     float defaultDistance;
     float originalDistance;
