@@ -13,7 +13,7 @@ public class PisoUIData
 public class VRSeleccionManager : MonoBehaviour
 {
     public static UnityAction<PisoUIData> OnUIData;
-    public GameObject menuRoot;
+
 
     VRSelectable actual;
 
@@ -25,7 +25,6 @@ public class VRSeleccionManager : MonoBehaviour
         actual = nuevo;
         if (actual != null) actual.SetActivo(true);
 
-        if (menuRoot != null) menuRoot.SetActive(actual != null);
 
         if (actual != null)
         {
@@ -50,7 +49,6 @@ public class VRSeleccionManager : MonoBehaviour
         {
             actual.SetActivo(false);
             actual = null;
-            if (menuRoot != null) menuRoot.SetActive(false);
             OnUIData?.Invoke(null);
         }
     }
@@ -59,7 +57,6 @@ public class VRSeleccionManager : MonoBehaviour
     {
         if (actual != null) actual.SetActivo(false);
         actual = null;
-        if (menuRoot != null) menuRoot.SetActive(false);
         OnUIData?.Invoke(null);
     }
 }

@@ -14,10 +14,7 @@ public class ControlDiaNoche : MonoBehaviour
     public float intensidadDia = 1.2f;
     public float intensidadNoche = 0.3f;
 
-    [Header("Control de texto e iconos")]
-    [SerializeField] private TextMeshProUGUI textoModo;
-    [SerializeField] private GameObject iconoDia;
-    [SerializeField] private GameObject iconoNoche;
+
 
 
     bool esDiaActual;
@@ -37,14 +34,6 @@ public class ControlDiaNoche : MonoBehaviour
             AplicarModo(esDiaActual);
             Debug.Log("Modo: " + (esDiaActual ? "Día" : "Noche"));
         }
-
-        // Actualizar texto e iconos
-        if (textoModo != null)
-        {
-            textoModo.text = esDiaActual ? "Día" : "Noche";
-            iconoDia.SetActive(esDiaActual);
-            iconoNoche.SetActive(!esDiaActual);
-        }
     }
 
     public void SetModo(bool esDia)
@@ -63,6 +52,13 @@ public class ControlDiaNoche : MonoBehaviour
     {
         esDiaActual = false;
         AplicarModo(false);
+    }
+
+    public void ToggleDiaNoche()
+    {
+        esDiaActual = !esDiaActual;
+        AplicarModo(esDiaActual);
+        Debug.Log("Modo: " + (esDiaActual ? "Día" : "Noche"));
     }
 
     void AplicarModo(bool esDia)
