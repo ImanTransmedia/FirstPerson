@@ -444,10 +444,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 2.03
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: -1.67, y: 0, z: 2.07}
+  m_Center: {x: -1.67, y: 0, z: -0.61}
 --- !u!1 &7422984378177574236
 GameObject:
   m_ObjectHideFlags: 0
