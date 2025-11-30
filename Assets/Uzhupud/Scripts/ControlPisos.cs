@@ -54,7 +54,7 @@ public class ControlPisos : MonoBehaviour
 
     public void Rotar(float valor)
     {
-        Transform t = pivot != null ? pivot : maqueta;
+        Transform t = maqueta;
         if (t != null)
             t.localRotation = Quaternion.Euler(eje * valor);
     }

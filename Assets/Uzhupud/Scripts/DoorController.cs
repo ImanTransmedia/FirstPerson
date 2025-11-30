@@ -13,6 +13,13 @@ public class DoorController : MonoBehaviour
     public string playerTag = "Player";
     public GameObject buttonUI;
 
+    [Header("Look At Settings")]
+    [SerializeField] private bool requireLookAt = true;
+
+    [SerializeField] private float maxLookAngle = 30f;
+
+    [SerializeField] private Transform lookFrom;
+
     public bool IsOpen { get; private set; }
 
     Quaternion closedRotation;
@@ -41,12 +48,26 @@ public class DoorController : MonoBehaviour
 
         if (buttonUI != null)
             buttonUI.SetActive(false);
+
+        if (lookFrom == null && Camera.main != null)
+        {
+            lookFrom = Camera.main.transform;
+        }
     }
 
     void Update()
     {
         if (!playerInside) return;
         if (inputs == null) return;
+
+        bool isLooking = !requireLookAt || IsPlayerLookingAtDoor();
+
+        if (buttonUI != null)
+        {
+            buttonUI.SetActive(!IsOpen && playerInside && isLooking);
+        }
+
+        if (!isLooking) return;
         if (IsOpen) return;
 
         if (inputs.interact)
@@ -63,7 +84,10 @@ public class DoorController : MonoBehaviour
         playerInside = true;
         inputs = other.GetComponentInParent<StarterAssetsInputs>();
 
-        if (!IsOpen && buttonUI != null)
+        if (lookFrom == null && Camera.main != null)
+            lookFrom = Camera.main.transform;
+
+        if (!IsOpen && buttonUI != null && (!requireLookAt || IsPlayerLookingAtDoor()))
             buttonUI.SetActive(true);
     }
 
@@ -134,6 +158,22 @@ public class DoorController : MonoBehaviour
     public void InteractFromButton()
     {
         if (!playerInside) return;
+        if (requireLookAt && !IsPlayerLookingAtDoor()) return;
+
         Interact();
+    }
+
+
+    bool IsPlayerLookingAtDoor()
+    {
+        if (lookFrom == null) return false;
+
+        Vector3 toDoor = (transform.position - lookFrom.position).normalized;
+        Vector3 forward = lookFrom.forward;
+
+        float dot = Vector3.Dot(forward, toDoor);
+
+        float angle = Mathf.Acos(Mathf.Clamp(dot, -1f, 1f)) * Mathf.Rad2Deg;
+        return angle <= maxLookAngle;
     }
 }

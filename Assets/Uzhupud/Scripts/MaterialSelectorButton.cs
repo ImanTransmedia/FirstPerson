@@ -17,9 +17,11 @@ public class MaterialSelectorButton : MonoBehaviour
             colorImage.color = color;
     }
 
-    public void OnClick()
+    public void SelectIndex()
     {
         if (selector == null) return;
+        Debug.Log("Selecting material index: " + index);
+        Debug.Log("Selector" + selector);
         selector.SelectIndex(index);
     }
 }

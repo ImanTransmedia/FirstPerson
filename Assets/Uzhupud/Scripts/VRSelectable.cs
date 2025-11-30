@@ -40,7 +40,8 @@ public class VRSelectable : MonoBehaviour
 
     public void SetActivo(bool activo)
     {
-        if (highlight != null) highlight.SetActive(activo);
+        var mh = FindFirstObjectByType<MaquetaDetailHandler>();
+        if (!mh.inTopView) if (highlight != null) highlight.SetActive(activo);
     }
 
 }

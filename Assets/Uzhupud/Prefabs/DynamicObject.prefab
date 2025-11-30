@@ -380,7 +380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8151076613176260108}
   - component: {fileID: 8718207156487676855}
-  - component: {fileID: 310536662301161456}
+  - component: {fileID: 3272456911618336966}
   m_Layer: 0
   m_Name: DynamicObject
   m_TagString: Untagged
@@ -418,13 +418,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   materials:
-  - {fileID: -3661639628750336703, guid: 7e0223e1d3e1733499accfa5ebffb67e, type: 3}
   - {fileID: 2100000, guid: 14c1718e27551d643b5e3d7bf637daa5, type: 2}
+  - {fileID: 2100000, guid: 280b58100709b6a438ad48c216040db8, type: 2}
+  - {fileID: 2100000, guid: bc6d0718b6a6aef49aef4413f556ae8f, type: 2}
   targetRenderer: {fileID: 8115156721016603314}
   defaultIndex: 0
   playerTag: Player
---- !u!65 &310536662301161456
-BoxCollider:
+  buttonUI: {fileID: 5297506494584384397}
+--- !u!136 &3272456911618336966
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -441,9 +443,11 @@ BoxCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.23, y: 1.12, z: 1.97}
-  m_Center: {x: -1.77, y: 0, z: -0.48}
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: -1.67, y: 0, z: 2.07}
 --- !u!1 &7422984378177574236
 GameObject:
   m_ObjectHideFlags: 0
