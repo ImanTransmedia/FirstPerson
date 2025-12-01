@@ -81,6 +81,7 @@ public class MaterialSelectorUI : MonoBehaviour
             inputs.cursorInputForLook = true;
             inputs.SetCursorState(true);
         }
+        current.ShowButtonUI();
 
         current = null;
         materials.Clear();

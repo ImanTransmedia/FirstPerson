@@ -13,6 +13,7 @@ namespace StarterAssets
         public bool jump;
         public bool sprint;
         public bool interact;
+        public bool returnMenu;
 
         [Header("Movement Settings")]
         public bool analogMovement;
@@ -50,6 +51,12 @@ namespace StarterAssets
             InteractInput(value.isPressed);
             Debug.Log("OnInteract called");
         }
+
+        public void OnReturnMenu(InputValue value)
+        {
+            ReturnMenuInput(value.isPressed);
+            Debug.Log("OnReturnMenu called");
+        }
 #endif
 
         public void MoveInput(Vector2 newMoveDirection)
@@ -76,6 +83,11 @@ namespace StarterAssets
         {
             interact = newInteractState;
             Debug.Log("Interact input: " + interact);
+        }
+
+        public void ReturnMenuInput(bool newReturnMenuState)
+        {
+            returnMenu = newReturnMenuState;
         }
 
         private void OnApplicationFocus(bool hasFocus)
