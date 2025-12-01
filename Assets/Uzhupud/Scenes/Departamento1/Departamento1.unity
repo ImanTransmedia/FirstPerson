@@ -60318,6 +60318,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1685641405814988019, guid: 61ecbc895ef07e742bafced4a16a0a2d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979664473731162816, guid: 61ecbc895ef07e742bafced4a16a0a2d, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4639961199837758268, guid: 61ecbc895ef07e742bafced4a16a0a2d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -60434,6 +60442,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -50
       objectReference: {fileID: 0}
+    - target: {fileID: 6175603664172640471, guid: 61ecbc895ef07e742bafced4a16a0a2d, type: 3}
+      propertyPath: m_Maskable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175603664172640471, guid: 61ecbc895ef07e742bafced4a16a0a2d, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6935679890965206907, guid: 61ecbc895ef07e742bafced4a16a0a2d, type: 3}
       propertyPath: starterAssetsInputs
       value: 
@@ -60468,7 +60484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9018064046654150836, guid: 61ecbc895ef07e742bafced4a16a0a2d, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 445
       objectReference: {fileID: 0}
     - target: {fileID: 9018064046654150836, guid: 61ecbc895ef07e742bafced4a16a0a2d, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -60476,7 +60492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9018064046654150836, guid: 61ecbc895ef07e742bafced4a16a0a2d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -807.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
