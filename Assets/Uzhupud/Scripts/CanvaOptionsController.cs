@@ -8,6 +8,7 @@ public class CanvaOptionsController : MonoBehaviour
     public GameObject returnPanel;
     public GameObject returnButton;
     public GameObject interactPanel;
+    public GameObject Joysticks;
 
     [Header("Input")]
     public StarterAssetsInputs starterAssetsInputs;
@@ -33,11 +34,15 @@ public class CanvaOptionsController : MonoBehaviour
             returnButton.SetActive(true);
         if (interactPanel != null)
             interactPanel.SetActive(false);
+        if (Joysticks != null)
+            Joysticks.SetActive(true);
 #else
         if (returnButton != null)
-            returnButton.SetActive(false);
+            returnButton.SetActive(true);
         if (interactPanel != null)
-            interactPanel.SetActive(true);
+            interactPanel.SetActive(false);
+        if (Joysticks != null)
+            Joysticks.SetActive(false);
 #endif
 
         isOpen = false;
@@ -100,6 +105,8 @@ public class CanvaOptionsController : MonoBehaviour
             returnButton.SetActive(true);
         if (interactPanel != null && starterAssetsInputs.interact)
             interactPanel.SetActive(false);
+        if (Joysticks != null)
+            Joysticks.SetActive(true);
 #else
         if (returnButton != null)
             returnButton.SetActive(false);
