@@ -22,7 +22,7 @@ public class CanvaOptionsController : MonoBehaviour
     {
         if (starterAssetsInputs == null)
         {
-            starterAssetsInputs = FindObjectOfType<StarterAssetsInputs>();
+            starterAssetsInputs = FindFirstObjectByType<StarterAssetsInputs>();
         }
 
         if (returnPanel != null)
@@ -45,6 +45,10 @@ public class CanvaOptionsController : MonoBehaviour
 
     void Update()
     {
+        if (starterAssetsInputs == null)
+        {
+            starterAssetsInputs = FindFirstObjectByType<StarterAssetsInputs>();
+        }
         if (starterAssetsInputs == null)
             return;
 
