@@ -7,6 +7,7 @@ public class MaterialSelectorUI : MonoBehaviour
     public GameObject root;
     [SerializeField] private Transform buttonsParent;
     [SerializeField] private MaterialSelectorButton buttonPrefab;
+    [SerializeField] private GameObject JoyStickPanel;
 
     public List<Material> materials = new List<Material>();
 
@@ -26,6 +27,9 @@ public class MaterialSelectorUI : MonoBehaviour
 
     public void OpenFor(DynamicObject target)
     {
+#if UNITY_ANDROID || UNITY_IOS
+        JoyStickPanel.SetActive(false);
+#endif
         current = target;
 
         materials.Clear();
@@ -68,6 +72,9 @@ public class MaterialSelectorUI : MonoBehaviour
 
     public void Close()
     {
+#if UNITY_ANDROID || UNITY_IOS
+        JoyStickPanel.SetActive(true);
+#endif
         if (!isOpen) return;
 
         if (root != null) root.SetActive(false);
@@ -81,6 +88,7 @@ public class MaterialSelectorUI : MonoBehaviour
             inputs.cursorInputForLook = true;
             inputs.SetCursorState(true);
         }
+        current.ShowButtonUI();
 
         current = null;
         materials.Clear();

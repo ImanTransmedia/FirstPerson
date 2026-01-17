@@ -37,6 +37,7 @@ public class DynamicObject : MonoBehaviour
             inputs.interact = false;
             Interact();
         }
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -92,6 +93,12 @@ public class DynamicObject : MonoBehaviour
 
         if (buttonUI != null)
             buttonUI.SetActive(false);
+    }
+
+    public void ShowButtonUI()
+    {
+        if (buttonUI != null)
+            buttonUI.SetActive(true);
     }
 
     public void InteractFromButton()
