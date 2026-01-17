@@ -5,7 +5,7 @@ using StarterAssets;
 public class DynamicObject : MonoBehaviour
 {
     public List<Material> materials = new List<Material>();
-    public MeshRenderer targetRenderer;
+    public MeshRenderer[] targetRenderers;
     public int defaultIndex = 0;
     public string playerTag = "Player";
     public GameObject buttonUI;
@@ -75,13 +75,20 @@ public class DynamicObject : MonoBehaviour
 
         currentIndex = index;
         Material m = materials[currentIndex];
-        if (m == null || targetRenderer == null) return;
+        if (m == null || targetRenderers == null) return;
 
-        if (Application.isPlaying)
-            targetRenderer.material = m;
-        else
-            targetRenderer.sharedMaterial = m;
+        for (int i = 0; i < targetRenderers.Length; i++)
+        {
+            var mr = targetRenderers[i];
+            if (mr == null) continue;
+
+            if (Application.isPlaying)
+                mr.material = m;
+            else
+                mr.sharedMaterial = m;
+        }
     }
+
 
     public void Interact()
     {

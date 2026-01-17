@@ -653,12 +653,18 @@ namespace Unity.VisualScripting.Generated.Aot
 	// ObjectHidder.op_Implicit
 	// ObjectHidder.op_Equality
 	// ObjectHidder.op_Inequality
+	// PlatformObjectActivator.op_Implicit
+	// PlatformObjectActivator.op_Equality
+	// PlatformObjectActivator.op_Inequality
 	// SceneLoader.op_Implicit
 	// SceneLoader.op_Equality
 	// SceneLoader.op_Inequality
 	// SimpleBillboard.op_Implicit
 	// SimpleBillboard.op_Equality
 	// SimpleBillboard.op_Inequality
+	// TouchHandler.op_Implicit
+	// TouchHandler.op_Equality
+	// TouchHandler.op_Inequality
 	// VRSeleccionManager.op_Implicit
 	// VRSeleccionManager.op_Equality
 	// VRSeleccionManager.op_Inequality
@@ -1125,13 +1131,15 @@ namespace Unity.VisualScripting.Generated.Aot
 	// --------------- Plugin Stubs
 	// --------------- Asset Stubs
 	// --------------- Scene Stubs
+	// UnityEngine.Device.Application.platform
+	// UnityEngine.GameObject.SetActive
 	// UnityEngine.SceneManagement.SceneManager.LoadScene
 	// UnityEngine.Application.Quit
 	// --------------- Scene Stubs
 	// --------------- Scene Stubs
 	// --------------- Scene Stubs
-	// UnityEngine.Device.Application.platform
-	// UnityEngine.GameObject.SetActive
+	// --------------- Scene Stubs
+	// --------------- Scene Stubs
 	// --------------- Scene Stubs
 	// --------------- Scene Stubs
 	// --------------- Scene Stubs
@@ -8601,6 +8609,41 @@ namespace Unity.VisualScripting.Generated.Aot
 			optimized.Invoke(default(object[]));
 		}
 		
+		// PlatformObjectActivator.op_Implicit
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void PlatformObjectActivator_op_Implicit()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			bool conversion = ((bool)(arg0));
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// PlatformObjectActivator.op_Equality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void PlatformObjectActivator_op_Equality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 == arg1);
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// PlatformObjectActivator.op_Inequality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void PlatformObjectActivator_op_Inequality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 != arg1);
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
 		// SceneLoader.op_Implicit
 		[global::UnityEngine.Scripting.PreserveAttribute()]
 		public static void SceneLoader_op_Implicit()
@@ -8662,6 +8705,41 @@ namespace Unity.VisualScripting.Generated.Aot
 		// SimpleBillboard.op_Inequality
 		[global::UnityEngine.Scripting.PreserveAttribute()]
 		public static void SimpleBillboard_op_Inequality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 != arg1);
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// TouchHandler.op_Implicit
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void TouchHandler_op_Implicit()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			bool conversion = ((bool)(arg0));
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// TouchHandler.op_Equality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void TouchHandler_op_Equality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 == arg1);
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// TouchHandler.op_Inequality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void TouchHandler_op_Inequality()
 		{
 			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
 			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
@@ -14072,6 +14150,27 @@ namespace Unity.VisualScripting.Generated.Aot
 			optimized.Invoke(default(object[]));
 		}
 		
+		// UnityEngine.Device.Application.platform
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_Device_Application_platform()
+		{
+			global::UnityEngine.RuntimePlatform accessor = global::UnityEngine.Device.Application.platform;
+			global::Unity.VisualScripting.StaticPropertyAccessor<UnityEngine.RuntimePlatform> optimized = new global::Unity.VisualScripting.StaticPropertyAccessor<UnityEngine.RuntimePlatform>(default(global::System.Reflection.PropertyInfo));
+			optimized.GetValue(null);
+		}
+		
+		// UnityEngine.GameObject.SetActive
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_GameObject_SetActive()
+		{
+			global::UnityEngine.GameObject target = default(global::UnityEngine.GameObject);
+			bool arg0 = default(bool);
+			target.SetActive(arg0);
+			global::Unity.VisualScripting.InstanceActionInvoker<UnityEngine.GameObject, bool> optimized = new global::Unity.VisualScripting.InstanceActionInvoker<UnityEngine.GameObject, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(default(global::UnityEngine.GameObject), arg0);
+			optimized.Invoke(default(object[]));
+		}
+		
 		// UnityEngine.SceneManagement.SceneManager.LoadScene
 		[global::UnityEngine.Scripting.PreserveAttribute()]
 		public static void UnityEngine_SceneManagement_SceneManager_LoadScene()
@@ -14091,27 +14190,6 @@ namespace Unity.VisualScripting.Generated.Aot
 			global::UnityEngine.Application.Quit(arg0);
 			global::Unity.VisualScripting.StaticActionInvoker<int> optimized = new global::Unity.VisualScripting.StaticActionInvoker<int>(default(global::System.Reflection.MethodInfo));
 			optimized.Invoke(null, arg0);
-			optimized.Invoke(default(object[]));
-		}
-		
-		// UnityEngine.Device.Application.platform
-		[global::UnityEngine.Scripting.PreserveAttribute()]
-		public static void UnityEngine_Device_Application_platform()
-		{
-			global::UnityEngine.RuntimePlatform accessor = global::UnityEngine.Device.Application.platform;
-			global::Unity.VisualScripting.StaticPropertyAccessor<UnityEngine.RuntimePlatform> optimized = new global::Unity.VisualScripting.StaticPropertyAccessor<UnityEngine.RuntimePlatform>(default(global::System.Reflection.PropertyInfo));
-			optimized.GetValue(null);
-		}
-		
-		// UnityEngine.GameObject.SetActive
-		[global::UnityEngine.Scripting.PreserveAttribute()]
-		public static void UnityEngine_GameObject_SetActive()
-		{
-			global::UnityEngine.GameObject target = default(global::UnityEngine.GameObject);
-			bool arg0 = default(bool);
-			target.SetActive(arg0);
-			global::Unity.VisualScripting.InstanceActionInvoker<UnityEngine.GameObject, bool> optimized = new global::Unity.VisualScripting.InstanceActionInvoker<UnityEngine.GameObject, bool>(default(global::System.Reflection.MethodInfo));
-			optimized.Invoke(default(global::UnityEngine.GameObject), arg0);
 			optimized.Invoke(default(object[]));
 		}
 	}

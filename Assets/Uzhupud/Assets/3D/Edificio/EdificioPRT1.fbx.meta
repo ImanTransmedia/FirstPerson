@@ -3,9 +3,204 @@ guid: 882a1f37ea556234484589eda139e722
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Acero pero se mezclo con vidrio.002
+    second: {fileID: 2100000, guid: deecc2d904d625e4ba67712990564c92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Algo en barandales PB.001
+    second: {fileID: 2100000, guid: ee53d7878f7190f459cbf4b0704cc9d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Algo en barandales_.002
+    second: {fileID: 2100000, guid: b37e152aa0eea3442aa1498ffbe483cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Amarillo
+    second: {fileID: 2100000, guid: ab61738c0253ff847b2d64b0d4b2afe3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Barandales PB.001
+    second: {fileID: 2100000, guid: 20d8983a7112493428c3b5cdd6909b91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bordes.001
+    second: {fileID: 2100000, guid: 91e5304bc8efd56488b3233305d0b53a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bordes.002
+    second: {fileID: 2100000, guid: 268b13a50cbbf684d9bc4e302671c93c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cartel Ecuagenera.002
+    second: {fileID: 2100000, guid: 5db82fe15292fee46a0ae0e97f841c3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cartel Farmacia.002
+    second: {fileID: 2100000, guid: e9f24d4c335aac0469da19c71d650534, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete
+    second: {fileID: 2100000, guid: 6f42b06d193162e43822c9036f96463e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Empty material.007
+    second: {fileID: 2100000, guid: 8c75268356bd9ff4d855241e870486ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Empty material.008
+    second: {fileID: 2100000, guid: c593cce83b041954f83e23fc470993c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Empty material.009
+    second: {fileID: 2100000, guid: bb6038996f86baf48aed3fb736df0560, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Empty material.010
+    second: {fileID: 2100000, guid: 26670967f4df21b4089fb6c86c4962e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Herreria dpto .002
+    second: {fileID: 2100000, guid: ad3963d2248f2cf4bb7f6039a235bb98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Herreria ventanas 2.002
+    second: {fileID: 2100000, guid: 9e55330dc87edc04782d51cc9e257523, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Herreria ventanas.002
+    second: {fileID: 2100000, guid: 10f89a694c09b664b909d8eeafd3c7e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jardin creo_.001
+    second: {fileID: 2100000, guid: 5c341afa0f89c6444a34ba394727e4bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #104.003
+    second: {fileID: 2100000, guid: 77b8b4290c8f3af4ea5b8595c2a324d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #104.004
+    second: {fileID: 2100000, guid: f9c39ec2d601ffc42b167c31512c78dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #504.002
+    second: {fileID: 2100000, guid: 1b3da0a8aa2c4494497bf666a8189283, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #90.007
+    second: {fileID: 2100000, guid: fdd15dc10b60a254badece49ff323d53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #90.009
+    second: {fileID: 2100000, guid: 344e5c9cd94dbbe4f89da3ebeef5c3b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #90.010
+    second: {fileID: 2100000, guid: 89176f73d34c0ad46a35b0d6d026cab8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #91.013
+    second: {fileID: 2100000, guid: df9dbfdb4f773f744b3f177506803156, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metales.001
+    second: {fileID: 2100000, guid: e7b9839a3d3def7469d38d42e612a55c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metales.002
+    second: {fileID: 2100000, guid: d9758b04cdc5aac4c8aafc3ac45b022b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metales.003
+    second: {fileID: 2100000, guid: a54ba2838411419438a1ec282a070879, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metales.004
+    second: {fileID: 2100000, guid: 6e5707dfda78ca9469f45cb872a3bdbb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muro retencion.001
+    second: {fileID: 2100000, guid: 836943f07d1e66145bb7beb8affc31c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Piso Sotano.001
+    second: {fileID: 2100000, guid: db4085f31a9ea5247892c1b962bd0ed6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Piso de dpto.002
+    second: {fileID: 2100000, guid: dee85861527c95c4a999f6e29d695d32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Piso dpto.002
+    second: {fileID: 2100000, guid: b033519e6da7a1a41b08836308c655a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlantasMuro.001
+    second: {fileID: 2100000, guid: 7298b98531a4b1e40b610b0f423fa8d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlantasMuro.002
+    second: {fileID: 2100000, guid: ce8b0b1f8a50d134381ffe6a64e8d551, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlantasMuro.003
+    second: {fileID: 2100000, guid: c94168a8f27708e48a9d1b89597e31dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rampa Est.001
+    second: {fileID: 2100000, guid: 136f6ec5fd8b5ca48bae57d568b25aeb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Un murito equis borrar yo creo.002
+    second: {fileID: 2100000, guid: 8b45978faf2f42f4ca1568e04a7a9daa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vidrio.003
+    second: {fileID: 2100000, guid: c6d520504e71ae24fab591437bedc1fe, type: 2}
   materials:
-    materialImportMode: 0
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1
